@@ -1,1 +1,45 @@
 /** CSS STYLE **/
+:root {
+    --color-white: #fff;
+    --color-white-transparent: #d7ccc0;
+    --color-light: #f5f4f0;
+    --color-main: #fe8a02;
+    --color-main-dark: #42413c;
+    --color-dark: #2a2626;
+    --color-dark-transparent: #908d8b;
+    --color-braun: #b09a81;
+    --color-blue: #1085c5;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Neucha';
+    src: url('../assets/fonts/Neucha/Neucha-Regular.ttf');
+}
+
+
+h1 {
+    font: 72px/1.2em 'Neucha';
+}
+
+h2 {
+    font: 60px/1.2em 'Neucha';
+}
+
+h3 {
+    font: 34px/1.2em 'Neucha';
+}
+
+.text {
+    font: 16px/1.6em 'Open Sans';
+    color: var(--color-dark);
+}
+
+section {
+    width: 1100px;
+    text-align: center;
+    padding: 100px 100px;
+}
