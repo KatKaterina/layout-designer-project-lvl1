@@ -355,3 +355,9 @@ section {
     position: absolute;
     top: 5455px;
 }
+
+#errors-in-planning {
+    display: flex;
+    position: absolute;
+    top: 6355px; 
+}
