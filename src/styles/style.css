@@ -1,431 +1,422 @@
 /** CSS STYLE **/
-:root {
-    --color-white: #fff;
-    --color-white-transparent: #d7ccc0;
-    --color-light: #f5f4f0;
-    --color-main: #fe8a02;
-    --color-main-dark: #42413c;
-    --color-dark: #2a2626;
-    --color-dark-transparent: #908d8b;
-    --color-braun: #b09a81;
-    --color-blue: #1085c5;
+
+/** BASIC **/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
-}
-@font-face {
-    font-family: 'Neucha';
-    src: url('../assets/fonts/Neucha/Neucha-Regular.ttf');
-}
-
-
-h1 {
-    font: 72px/1.2em 'Neucha';
-}
-
-h2 {
-    font: 60px/1.2em 'Neucha';
-}
-
-h3 {
-    font: 34px/1.2em 'Neucha';
-}
-
-.text {
-    font: 16px/1.6em 'Open Sans';
-    color: var(--color-dark);
-}
-
-.color-main {
-    color: var(--color-main);
-}
-
-.color-dark {
-    color: var(--color-dark);
-}
-
-.color-light {
-    color: var(--color-light);
-}
-
-.color-white {
-    color: var(--color-white);
-}
-
-.color-dark-transparent {
-    color: var(--color-dark-transparent);
-}
-
-.color-white-transparent {
-    color: var(--color-white-transparent);
-} 
-
-.color-braun {
-    color: var(--color-braun);
-}
-.color-blue {
-    color: var(--color-blue);
+body {
+  color: var (--color-dark);
+  font: 16px/1.6em 'Open Sans', sans-serif;
 }
 
 section {
-    width: 1440px; 
-    padding-top: 100px;
-    padding-bottom: 100px;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
+  top: -100px;
 }
 
-.background-light {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0 auto;
-    background: var(--color-light);
+.hidden {
+  overflow: hidden;
 }
 
-.background-light::before {
-    display: block;
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-
-    left: 0;
-    right: 0;
-
-    background: url('../images/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 10%;
-
-    content: '';
+.decoration-none {
+  text-decoration: none;
 }
 
-.background-dark {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0 0;
-    background: var(--color-braun);   
+.align-left {
+  text-align: left;
 }
 
-.background-dark::before {
-    display: block;
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-
-    left: 0;
-    right: 0;
-
-    background: url('../images/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 10%;
-
-    content: '';
+.align-center {
+  text-align: center;
 }
 
-.title {
-    position: relative;
-    margin: 0;
-    left: 165px;
-    text-align: left;
-    max-width: 1110px;
-    margin-bottom: 185px;
+.text {
+  color: var(--color-dark);
+  font: 16px/1.6em 'Open Sans', sans-serif;
 }
 
-.title-image {
-    position: absolute;
-    display: block;
-    height: 525px;
-    top: -45px;
-    left: 296px;
-}
+.container {
+  position: relative;
 
-.column-2 {
-    display: flex;
-    max-width: 1110px;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0 165px;
-    padding-top: 40px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 1110px;
+
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .flex-item {
-    flex: 1 1 0;
-    margin: 0 30px 0 0;
-}
-.align-left {
-    text-align: left;
+  flex-grow: 1;
+  width: calc(50% - 20px);
 }
 
-
-.margin-0 {
-    margin: 0;
+/** FONTS **/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/Open_Sans/OpenSans-Regular.ttf");
 }
 
-.button {
-    background: var(--color-main);
-    border: none;
-    color: var(--color-white);
-    font: bold 16px/1.6em 'Open Sans';
-    padding: 12px 24px;
-    margin-top: 40px;
-    text-decoration: none;
+@font-face {
+  font-family: "Neucha";
+  src: url("../assets/fonts/Neucha/Neucha-Regular.ttf");
 }
 
-.video-content {
-    position: absolute;
-    top: 914px;
-    text-align: center;
-    background: var(--color-white);
-    padding-bottom: 0;
-    width: 100%;
-}
-
-.video {
-    position: relative;
-    margin-top: 30px;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-    z-index: 2;
-}
-
-.card {
-    width: 100%;
-    position: absolute;
-    top: 1728px;
-    background: var(--color-main-dark); 
-    z-index: 1;
-    padding-top: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    gap: 20px 30px;
-  
-    padding-right: 165px;
-    padding-left: 165px;
-}
-
-.card h1 {
-    font-size: 52px;
-}
-
-.card-item h3 {
-    margin: 0;
-}
-
-.card-item p {
-    margin: 0;
-}
-.white-block {
-    background: var(--color-light);
-    display: block;
-    text-decoration: none;
-    padding: 24px 24px;
-}
-
-.white-block:hover {
-    background: var(--color-main);
-    color: var(--color-light);
-}
-
-.white-block:hover h3 {
-    color: var(--color-light); 
-}
-
-.white-block:hover p {
-    color: var(--color-light); 
-}
-
-.number {
-    font: 64px/1em 'Neucha';
-    color: var(--color-main-dark);
-    padding: 0 0 40px 0;
-    margin: 0;
-}
-
-.card-item {
-    text-align: left;
-   
-    width: 350px;
-    height: 323px;
-    box-sizing: border-box;
-}
-
-#ikea-effect {
-    display: flex;
-    position: absolute;
-    top: 2695px;
-}
-
-.image_1 {
-    vertical-align: middle;
-    width: 578px;
-    height: 434px;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
-.topic {
-    font: 24px 'Neucha';
-}
-
-.description {
-    font: 34px 'Neucha';
-}
-
-.bar {
-    width: 1110px;
-    height: 26px;
-    position: absolute;
-
-    top: 576px;
-    margin-top: 100px;
-    margin-bottom: 20px;   
-}
-
-.dark-bar {
-    background: var(--color-braun);
-}
-
-.light-bar {
-    background: var(--color-white);
-}
-
-.bar p {
-    padding: 5px 10px;
-    font: normal bold 14px/17px 'Open Sans';
-}
-
-.down-position {
-    position: absolute;
-    top: 680px;
-}
-
-#premature-optimization {
-    display: flex;
-    position: absolute;
-    top: 3655px;
-}
-
-#distortion-of-novelty {
-    display: flex;
-    position: absolute;
-    top: 4555px;
-}
-
-#hyperbolic-depreciation{
-    display: flex;
-    position: absolute;
-    top: 5455px;
-}
-
-#errors-in-planning {
-    position: absolute;
-    top: 6355px; 
-}
-
-.flex {
-    display: flex;
-    justify-content: center;    
-}
-
-.footer-bar {
-    width: 1110px;
-    height: 190px;
-    background: var(--color-main-dark);
-    position: absolute;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    padding: 0;
-}
-
-.footer {
-    position: absolute;
-    top: 7255px;
-    text-align: center;
-    background: var(--color-white);
-    width: 100%;;
-    height: 581px;
-}
-
-.footer-text {
-    font: 34px 'Neucha';
-    margin: 55px 55px;
+.fs-52 {
+  font: 52px 'Neucha', sans-serif;
 }
 
 .fs-18 {
-    font: 18px 'Open Sans';
+  font: 18px 'Open Sans', sans-serif;
 }
 
 .fs-12 {
-    font: 12px 'Open Sans';  
+  font: 12px 'Open Sans', sans-serif;
 }
 
 .fs-14 {
-    font: 14px 'Open Sans';
+  font: 14px 'Open Sans', sans-serif;
 }
 
-.email {
-    position: absolute;
-    top: 75px;
-    left: 0;
-    height: 50px;
-    width: 432px;
-    margin: 0 0;
-    padding: 0;
-    border: none;
+.fs-24 {
+  font: 24px 'Neucha', sans-serif;
 }
 
-.button-send {
-    background: var(--color-main);
-    border: none;
-    width: 70px;
-    height: 50px;
-    position: absolute;
-    top: 75px;
-    right: 55px;
+.fs-34 {
+  font: 34px 'Neucha', sans-serif;
 }
 
-.contacts {
-    position: absolute;
-    top: 366px;
-    left: 0;
-    right: 0;
+/** COLORS **/
+:root {
+  --color-white: #fff;
+  --color-white-transparent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-main: #fe8a02;
+  --color-main-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-transparent: #908d8b;
+  --color-braun: #b09a81;
+  --color-blue: #1085c5;
 }
 
-.email-box {
-    position: relative;
+.color-main {
+  color: var(--color-main);
 }
 
-.email-box label {
-    position: absolute;
-    top: 38px;
-    left: 0;
-    width: 184px;
+.color-dark {
+  color: var(--color-dark);
+}
+
+.color-light {
+  color: var(--color-light);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-dark-transparent {
+  color: var(--color-dark-transparent);
+}
+
+.color-white-transparent {
+  color: var(--color-white-transparent);
+}
+
+.color-braun {
+  color: var(--color-braun);
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+/** TITLES **/
+h1 {
+  font: 72px/1.2em 'Neucha', sans-serif;
+}
+
+h2 {
+  font: 60px/1.2em 'Neucha', sans-serif;
+}
+
+h3 {
+  font: 34px/1.2em 'Neucha', sans-serif;
+}
+
+/** MARGINS & PADDINGS **/
+.mt-190 {
+  margin-top: 190px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mr-27 {
+  margin-top: 27px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+/** BACKGROUNDS **/
+.background-light {
+  position: relative;
+
+  background: var(--color-light);
+}
+
+.background-light::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 10%;
+
+  content: "";
+}
+
+.background-dark {
+  position: relative;
+
+  background: var(--color-braun);
+}
+
+.background-dark::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 10%;
+
+  content: "";
+}
+
+/** HEADER **/
+.title-image {
+  position: absolute;
+  top: 35px;
+  left: 300px;
+
+  height: 525px;
+}
+
+.button {
+  display: block;
+  width: 148px;
+  height: 49px;
+  margin-top: 40px;
+  padding: 12px 24px;
+  border: none;
+
+  font: bold 16px/1.6em 'Open Sans', sans-serif;
+  text-align: center;
+
+  background: var(--color-main);
+}
+
+/** MAIN **/
+.video {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 30px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.card {
+  position: relative;
+  top: -100px;
+  z-index: 1;
+
+  padding-top: 100px;
+
+  background: var(--color-main-dark);
+}
+
+.white-block {
+  display: block;
+
+  text-decoration: none;
+
+  background: var(--color-light);
+}
+
+.white-block:hover {
+  color: var(--color-light);
+
+  background: var(--color-main);
+}
+
+.white-block:hover h3 {
+  color: var(--color-light);
 }
 
 .email-box p {
-    position: absolute;
-    top: 125px;
+  position: absolute;
+  top: 125px;
 }
 
+.white-block:hover p {
+  color: var(--color-light);
+}
+
+.number {
+  margin-bottom: 40px;
+
+  color: var(--color-main-dark);
+
+  font: 64px/1em 'Neucha', sans-serif;
+}
+
+.card-item {
+  width: 302px;
+  margin: 10px 10px;
+  padding: 24px 24px;
+}
+
+.card-title {
+  width: 350px;
+  margin: 10px 10px;
+}
+
+/** SECTION **/
+.image_section {
+  width: calc(50% - 20px);
+
+  vertical-align: middle;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.bar {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.dark-bar {
+  background: var(--color-braun);
+}
+
+.light-bar {
+  background: var(--color-white);
+}
+
+.bar h5 {
+  padding: 5px 10px;
+
+  font: normal bold 14px/17px 'Open Sans', sans-serif;
+}
+
+/** FOOTER **/
+.footer-bar {
+  position: relative;
+
+  width: 100%;
+
+  background: var(--color-main-dark);
+}
+
+.footer-text {
+  margin: 55px 55px;
+
+  font: 34px 'Neucha', sans-serif;
+}
+
+.email {
+  position: absolute;
+  top: 75px;
+  left: 0;
+
+  width: 382px;
+  height: 20px;
+
+  margin: 0 0;
+  padding: 15px;
+  border: none;
+}
+
+.button-send {
+  position: absolute;
+  top: 75px;
+  right: 55px;
+
+  width: 70px;
+  height: 50px;
+  border: none;
+
+  background: var(--color-main);
+}
+
+.button-send::before {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+
+  background: url("images/send.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
+.email-box {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.email-box label {
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  width: 184px;
+}
