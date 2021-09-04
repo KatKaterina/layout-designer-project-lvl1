@@ -161,6 +161,14 @@ h3 {
   margin-top: 30px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
@@ -312,7 +320,6 @@ h3 {
 
 .card-item {
   width: 302px;
-  /*margin: 10px 10px;*/
   margin-bottom: 20px;
   padding: 24px 24px;
 }
@@ -320,7 +327,6 @@ h3 {
 .card-title {
   width: 350px;
   margin-bottom: 20px;
-  /*margin: 10px 10px;*/
 }
 
 /** SECTION **/
