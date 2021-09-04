@@ -312,13 +312,15 @@ h3 {
 
 .card-item {
   width: 302px;
-  margin: 10px 10px;
+  /*margin: 10px 10px;*/
+  margin-bottom: 20px;
   padding: 24px 24px;
 }
 
 .card-title {
   width: 350px;
-  margin: 10px 10px;
+  margin-bottom: 20px;
+  /*margin: 10px 10px;*/
 }
 
 /** SECTION **/
