@@ -51,11 +51,15 @@ section {
 }
 
 .flex-item {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: calc(50% - 20px);
-  /*width: calc(50% - 20px);*/
+  /*flex-grow: 1;*/
+  flex: 1 1 auto;
+  /*flex-shrink: 0.5;*/
+  /*flex-basis: calc(50%-30px);*/
+
+  width: calc(50% - 30px);
 }
+
+.width-
 
 /** FONTS **/
 @font-face {
@@ -333,9 +337,9 @@ h3 {
 
 /** SECTION **/
 .image_section {
-  width: calc(50% - 20px);
+  /*width: calc(50% - 20px);*/
 
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
