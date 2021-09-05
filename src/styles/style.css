@@ -374,7 +374,7 @@ h3 {
 
 /** FOOTER **/
 .footer-bar {
-  position: relative;
+  /*position: relative;*/
 
   display: flex;
   justify-content: space-between;
