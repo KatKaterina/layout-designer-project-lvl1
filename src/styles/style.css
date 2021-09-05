@@ -376,6 +376,9 @@ h3 {
 .footer-bar {
   position: relative;
 
+  display: flex;
+  justify-content: space-between;
+
   width: 100%;
 
   background: var(--color-main-dark);
