@@ -173,6 +173,10 @@ h3 {
   margin-top: 30px;
 }
 
+.mt-38 {
+  margin-top: 38px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -374,12 +378,14 @@ h3 {
 
 /** FOOTER **/
 .footer-bar {
-  /*position: relative;*/
+  position: relative;
 
   display: flex;
   justify-content: space-between;
 
-  width: 100%;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
 
   background: var(--color-main-dark);
 }
@@ -391,9 +397,9 @@ h3 {
 }
 
 .email {
-  position: absolute;
+  /*position: absolute;
   top: 75px;
-  left: 0;
+  left: 0;*/
 
   width: 382px;
   height: 20px;
@@ -405,8 +411,8 @@ h3 {
 
 .button-send {
   position: absolute;
-  top: 75px;
-  right: 55px;
+  top: 63px;
+  right: 73px;
 
   width: 70px;
   height: 50px;
@@ -433,15 +439,16 @@ h3 {
 }
 
 .email-box {
-  position: absolute;
+  /*position: absolute;
   top: 10px;
-  right: 30px;
+  right: 30px;*/
 }
 
 .email-box label {
-  position: absolute;
+  /*position: absolute;
   top: 38px;
-  left: 0;
+  left: 0;*/
 
   width: 184px;
+  margin-bottom: 10px;
 }
