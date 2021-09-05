@@ -350,7 +350,7 @@ h3 {
 }
 
 /** SECTION **/
-.image_section {
+.image-section {
   flex: none;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
